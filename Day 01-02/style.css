@@ -1,0 +1,14 @@
+body {
+  background-color: #2e2e2e;
+  padding: 20px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25em;;
+  color: #00ffd9;
+}
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25em;
+  color: #69f100;
+}

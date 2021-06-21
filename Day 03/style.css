@@ -1,0 +1,75 @@
+* {
+    /* border: 1px solid black; */
+}
+
+body {
+    margin: 0;
+    padding: 0px 10px;
+    background-color: #ffffff;
+    color: #ff6600;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    font-family: monospace;
+    color: teal;
+}
+
+.name-and-title {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    z-index: 0;
+    top: 10px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.name {
+    color: #9500ff;
+}
+
+.job-title {
+    margin-top: -22px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    flex-flow:  column;
+    margin-top: -100px;
+}
+
+.child {
+    padding: 0px 50px;
+    font-size: 15.6px;
+    position: relative;
+    z-index: 1;
+}
+
+.child h2 {
+    color: #571685;
+}
+
+.company {
+    font-weight: lighter;
+}
+
+.right-div {
+    justify-content: space-between;
+}
