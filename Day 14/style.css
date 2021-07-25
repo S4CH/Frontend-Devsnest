@@ -1,0 +1,17 @@
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dragbox {
+  margin-top: 50px;
+  width:100px;
+  height:100px;
+  background-color: red;
+}
+
+input {
+  margin-top: 30px;
+}
