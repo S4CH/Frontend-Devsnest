@@ -1,0 +1,75 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+  display: flex;
+  justify-content: center;
+	flex-flow: column;
+  align-items: center;
+	/* background-image: url("backgrounds/bg-sea.jpg"); */
+}
+
+.score-display {
+	padding: 10px 20px;
+	background: white;
+	margin: 20px 20px;
+	border-radius: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* box-shadow: 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.game-container{
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+	perspective:600px;
+}
+
+.tile {
+	background: aliceblue;
+	border: solid 1px black;
+	width: 150px;
+	height: 150px;
+	position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.tile:hover {
+	cursor: pointer;
+}
+
+.tile__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.tile__face--front {
+	width: 50%;
+	height: 50%;
+	display: block;
+	left: 25%;
+	top: 25%;
+}
+
+.tile__face--back {
+  background: rgb(146, 138, 255);
+  transform: rotateY( 180deg );
+}
+
+.tile.is-flipped {
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 512px) {
+	.tile {
+		height: 75px;
+		width: 75px;
+	}
+}
