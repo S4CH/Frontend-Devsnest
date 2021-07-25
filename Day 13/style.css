@@ -1,0 +1,25 @@
+body {
+  margin: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.quote-symbol {
+  font-size: 10rem;
+  height: 5rem;
+}
+
+.quote {
+  padding: 0 20%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.author {
+  font-size: 1.5rem;
+  margin-top: 5.5rem;
+}
